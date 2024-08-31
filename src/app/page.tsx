@@ -6,6 +6,8 @@ import { Button } from "@mui/base/Button";
 import { TextField } from "@mui/material";
 import CustomizedInputBase from "@/app/component/searchbar";
 import FolderList from "@/app/component/nearHospitallist";
+import Appointments from "@/app/component/Appointments";
+import BottomNavigation from "@/app/component/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +23,12 @@ export default function Home() {
         <div className="flex justify-center ">
           <FolderList />
         </div>
+        <h2 className="text-center text-xl">นัดหมายต่อไป</h2>
+        <div className="flex justify-center ">
+          <Appointments />
+        </div>
       </div>
+
     </main>
   );
 }

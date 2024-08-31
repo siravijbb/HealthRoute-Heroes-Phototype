@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import * as React from "react";
 import ResponsiveAppBar from "./component/ButtonAppBar";
+import Box from "@mui/material/Box";
+import BottomNavigation from "./component/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +19,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <ResponsiveAppBar />
-
-        {children}
-      </body>
+    <html lang="en" className="relative">
+    <body className={inter.className}>
+    <div className=" fixed top-0 w-full">
+      <ResponsiveAppBar />
+    </div>
+    <div className="pt-14">
+      {children}
+    </div>
+      <div className=" fixed bottom-0 w-screen">
+        <BottomNavigation />
+      </div>
+    </body>
     </html>
-  );
+);
 }
