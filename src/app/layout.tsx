@@ -18,10 +18,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // @ts-ignore
+  // @ts-ignore
   return (
-    <html lang="en" className="relative">
+    <html lang="en" className="relative" >
     <body className={inter.className}>
-    <div className=" fixed top-0 w-full">
+    <div className=" fixed top-0 w-full z-50">
       <ResponsiveAppBar />
     </div>
     <div className="pt-14">

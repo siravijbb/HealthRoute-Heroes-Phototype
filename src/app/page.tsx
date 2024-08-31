@@ -11,9 +11,9 @@ import BottomNavigation from "@/app/component/Footer";
 
 export default function Home() {
   return (
-    <main className="w-full  bg-blue-400 mx-auto">
-      <div className="h-screen">
-        <div className="pt-2 text-2xl">
+    <main className="w-100svh h-full  bg-blue-400 mx-auto">
+      <div className="h-screen bg-blue-400">
+        <div className="pt-2 md:pt-6 text-2xl">
           <h1 className="text-center">ยินดีต้อนรับคุณ คนไทย</h1>
         </div>
         <div className="flex justify-center  ">
