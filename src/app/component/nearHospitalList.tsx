@@ -13,7 +13,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import Paper from "@mui/material/Paper";
 
-export default function FolderList() {
+export default function NearHospitalList() {
     return (
       <Paper sx={{
           m: "10px",

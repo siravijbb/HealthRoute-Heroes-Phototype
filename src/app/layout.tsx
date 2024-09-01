@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import * as React from "react";
-import ResponsiveAppBar from "./component/ButtonAppBar";
+import ResponsiveAppBar from "./component/Navbar";
 import Box from "@mui/material/Box";
 import BottomNavigation from "./component/Footer";
 
