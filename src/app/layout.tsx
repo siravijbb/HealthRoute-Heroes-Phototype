@@ -21,18 +21,22 @@ export default function RootLayout({
   // @ts-ignore
   // @ts-ignore
   return (
-    <html lang="en" className="relative" >
+
+    <html lang="en" className="relative font-[IBM Plex Sans Thai]">
     <body className={inter.className}>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Itim&display=swap"
+          rel="stylesheet" />
+
     <div className=" fixed top-0 w-full z-50">
       <ResponsiveAppBar />
     </div>
     <div className="pt-14">
       {children}
     </div>
-      <div className=" fixed bottom-0 w-screen">
-        <BottomNavigation />
-      </div>
+    <div className=" fixed bottom-0 w-screen">
+      <BottomNavigation />
+    </div>
     </body>
     </html>
-);
+  );
 }
