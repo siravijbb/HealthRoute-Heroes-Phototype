@@ -50,7 +50,7 @@ export default function NearHospitalList() {
               <div className="grid grid-cols-2 w-full">
                   <p className="ml-2 block text-clip ">รพ.มจธ</p>
                   <div className="flex relative">
-                      <p className="ml-2 block text-clip  text-center">3 กม.</p>
+                      <p className="ml-2 block text-clip  text-center">0 กม.</p>
                       <div className="flex -my-2 pt-0.5 absolute right-0">
                           <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 0 24 24" width="35"
                                fill="#00CC00">
@@ -74,7 +74,7 @@ export default function NearHospitalList() {
               <div className="grid grid-cols-2 w-full">
                   <p className="ml-2 block text-clip ">รพ.IMH</p>
                   <div className="flex relative">
-                      <p className="ml-2 block text-clip  text-center">3 กม.</p>
+                      <p className="ml-2 block text-clip  text-center">2 กม.</p>
                       <div className="flex -my-2 pt-0.5 absolute right-0">
                           <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 0 24 24" width="35"
                                fill="#00CC00">

@@ -26,7 +26,7 @@ export default function NearHospitalList() {
       }}>
           <ol className="bg-white py-2 text-black border border-1 hover:bg-gray-200 ">
               <div className="grid grid-cols-2 w-full">
-                  <p className="ml-2 block text-clip ">นพ.หมอที่สุดใน</p>
+                  <p className="ml-2 block text-clip ">นพ.สยาม แยมส้ม</p>
                   <div className="flex relative">
                       <div className="flex -my-2 pt-0.5 absolute right-4 ">
                           <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 0 24 24" width="35" fill="red">
