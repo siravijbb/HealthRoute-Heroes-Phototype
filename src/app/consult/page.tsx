@@ -15,8 +15,11 @@ export default function Home() {
   return (
     <main className="w-100svh h-full  bg-blue-400 mx-auto">
       <div className="h-screen bg-blue-400">
-        <div className="pt-2 md:pt-6 text-2xl">
-          <h1 className="text-center">สอบถามจากรายการล่าสุด</h1>
+
+        <div className="pt-2 md:pt-6 ">
+          <DoctorStatus />
+
+          <h1 className="text-center text-2xl">สอบถามจากรายการล่าสุด</h1>
         </div>
         <div className="flex justify-center ">
           <NearHospitalList />
@@ -25,7 +28,6 @@ export default function Home() {
 
           <small className="-my-2 text-center mx-auto text-gray-600">* มีค่าใช่จ่าย</small>
         </div>
-        <DoctorStatus />
 
         <h2 className="text-center text-xl my-2">หรือ</h2>
         <div className="flex justify-center ">
