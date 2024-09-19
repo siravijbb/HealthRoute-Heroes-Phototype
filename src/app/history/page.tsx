@@ -8,6 +8,7 @@ import HomeSeach from "@/app/component/searchbar";
 import NearHospitalList from "@/app/component/consult/lastestDoctor";
 import Appointments from "@/app/component/Appointments";
 import BottomNavigation from "@/app/component/Footer";
+import DoctorStatus from "@/app/component/direction/doctorStatus";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <div className="flex justify-center ">
           <NearHospitalList />
         </div>
+        <DoctorStatus />
 
 
 

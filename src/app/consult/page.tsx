@@ -8,6 +8,8 @@ import HomeSeach from "@/app/component/searchbar";
 import NearHospitalList from "@/app/component/consult/lastestDoctor";
 import Appointments from "@/app/component/Appointments";
 import BottomNavigation from "@/app/component/Footer";
+import Paper from "@mui/material/Paper";
+import DoctorStatus from "@/app/component/direction/doctorStatus";
 
 export default function Home() {
   return (
@@ -23,8 +25,9 @@ export default function Home() {
 
           <small className="-my-2 text-center mx-auto text-gray-600">* มีค่าใช่จ่าย</small>
         </div>
+        <DoctorStatus />
 
-        <h2 className="text-center text-xl my-5">หรือ</h2>
+        <h2 className="text-center text-xl my-2">หรือ</h2>
         <div className="flex justify-center ">
           <button className="p-4 rounded-lg bg-gray-100 hover:bg-gray-300">ปรึกษาท่านอื่น</button>
         </div>

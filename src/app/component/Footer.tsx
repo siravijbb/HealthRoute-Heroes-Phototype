@@ -13,7 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import HistoryIcon from '@mui/icons-material/History';
 
 export default function SimpleBottomNavigation() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(99);
   const [currentPage, setCurrentPage] = React.useState('home');
 
   useEffect(() => {
@@ -39,6 +39,9 @@ export default function SimpleBottomNavigation() {
         setValue(4);
         setCurrentPage('setting');
         break;
+      case '':
+        setValue(99);
+        break
     }
   }, []);
 
