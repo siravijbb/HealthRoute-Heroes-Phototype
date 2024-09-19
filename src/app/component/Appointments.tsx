@@ -25,7 +25,7 @@ export default function Appointments() {
           <div className="flex relative">
             <p className="ml-2 block text-clip  text-center">0 กม.</p>
             <div className="flex -my-3  absolute right-0">
-              <p className="ml-2 block text-clip  text-center">ออกภายใน<p> 30 นาทีนี้</p></p>
+              <div className="ml-2 block text-clip  text-center">ออกภายใน<div> 30 นาทีนี้</div></div>
 
 
             </div>

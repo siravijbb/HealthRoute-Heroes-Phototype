@@ -11,6 +11,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AddIcon from '@mui/icons-material/Add';
 import MenuIcon from '@mui/icons-material/Menu';
 import HistoryIcon from '@mui/icons-material/History';
+
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
   const [currentPage, setCurrentPage] = React.useState('home');
@@ -42,18 +43,13 @@ export default function SimpleBottomNavigation() {
   }, []);
 
   return (
-    <Box>
-
-      <BottomNavigation
-        showLabels
-        value={value}
-      >
-
-          <BottomNavigationAction href="/" label="หน้าหลัก" icon={<RestoreIcon />} />
-          <BottomNavigationAction href="/consult" label="ปรึกษา" icon={<FavoriteIcon />} />
-          <BottomNavigationAction href="/appointments" label="นัดหมาย" icon={<AddIcon />} />
-          <BottomNavigationAction href="/history" label="ประวัติ" icon={<HistoryIcon />} />
-          <BottomNavigationAction href="/setting" label="ต้งค่า" icon={<MenuIcon />} />
+    <Box sx={{ fontFamily: 'IBM Plex Sans Thai, sans-serif' }}>
+      <BottomNavigation showLabels value={value}>
+        <BottomNavigationAction href="/" label="หน้าหลัก" icon={<RestoreIcon />} />
+        <BottomNavigationAction href="/consult" label="ปรึกษา" icon={<FavoriteIcon />} />
+        <BottomNavigationAction href="/appointments" label="นัดหมาย" icon={<AddIcon />} />
+        <BottomNavigationAction href="/history" label="ประวัติ" icon={<HistoryIcon />} />
+        <BottomNavigationAction href="/setting" label="ต้งค่า" icon={<MenuIcon />} />
       </BottomNavigation>
       <Box>
         {currentPage === 'home'}
@@ -61,7 +57,6 @@ export default function SimpleBottomNavigation() {
         {currentPage === 'appointments'}
         {currentPage === 'history'}
         {currentPage === 'setting'}
-
       </Box>
     </Box>
   );

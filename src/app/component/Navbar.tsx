@@ -43,6 +43,7 @@ function ResponsiveAppBar() {
   };
 
   return (
+    <div>
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -101,6 +102,7 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
     </AppBar>
+    </div>
   );
 }
 export default ResponsiveAppBar;

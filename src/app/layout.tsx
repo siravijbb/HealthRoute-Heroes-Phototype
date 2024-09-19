@@ -22,10 +22,15 @@ export default function RootLayout({
   // @ts-ignore
   return (
 
-    <html lang="en" className="relative font-[IBM Plex Sans Thai]">
-    <body className={inter.className}>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Itim&display=swap"
-          rel="stylesheet" />
+    <html>
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com"  />
+      <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    </head>
+    <body >
 
     <div className=" fixed top-0 w-full z-50">
       <ResponsiveAppBar />
